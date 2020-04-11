@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    color:rgb(249, 98, 98);/*Desaturated red*/
+    color:rgb(206, 151, 151); /*Soft red*/
+    color:rgb(65, 58, 58); /*Dark Grayish Red*/
+}
+body{
+    font-family:'Josefin Sans', sans-serif;
+    background-image:url(./images/bg-pattern-desktop.svg);
+    font-size:16px;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    max-width:460px;
+    margin:auto;
+    padding:20px 0;
+}
+.left > a{
+    width:160px;
+    margin-bottom:80px;
+}
+.icon{
+    width: 100%;
+    height: 100%;
+}
+h1{
+    font-size: 72px;
+    color:rgb(65, 58, 58); /*Dark Grayish Red*/
+    text-transform: uppercase;
+    line-height: 1.1;
+    letter-spacing: 13px;
+    margin-bottom: 20px;
+}
+h1 span{
+    color:rgb(206, 151, 151);
+    font-weight: 300;
+}
+p{
+    color:rgb(206, 151, 151);
+    font-weight: 600;
+    line-height: 2;
+    margin-bottom: 40px;
+}
+.right{
+    width:35%;
+    height:100vh;
+    background-image: url('./images/hero-desktop.jpg');
+    background-position: center;
+    background-size: cover;
+}
+form{
+    position: relative;
+}
+input{
+    padding:18px 30px;
+    background:transparent;   
+    border-radius: 24px;
+    border:1px solid rgb(206, 151, 151);
+    width: 100%;
+    outline: none;
+    margin-bottom: 12px;
+}
+button{
+    padding:12px 20px;
+    min-width: 90px;
+    max-height: 51px;
+    height: 100%;
+    background-image: linear-gradient(135deg,rgb(248, 191, 191), rgb(238, 140, 140));
+    border-radius: 24px;
+    position: absolute;
+    top:0;
+    right: 0;
+    box-shadow:0 0px 1px rgb(65, 58, 58);
+    border: none;
+    outline:none;
+}
+button span{
+    display: none;
+    height: 20px;
+    width: 20px;
+    border:1px solid rgb(255, 255, 255);
+    border-bottom-color:transparent;
+    border-radius: 50%;
+    animation-timing-function: linear ;
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+input::placeholder{
+    color:rgb(206, 151, 151);
+    opacity: 0.8;
+    font-size: 14px;
+}
+input.error{
+    border-color:rgb(249, 98, 98);
+}
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+small{
+ color:rgb(249, 98, 98);
+ position: absolute;
+ bottom: -12px;
+ left:30px;
+ display: none;
+}
+.error-sign{
+    position: absolute;
+    right:100px;
+    top:12px;
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+.show{
+    display: inline-block;
+}
+.phone{
+    display: none;
+}
+@media (max-width:768px){
+
+    .right{
+        display: none;
+    }
+    .left{
+        text-align: center;
+        width: 100%;
+    }
+    .left div{
+        padding: 0 20px;
+    }
+    .left a{
+        margin-left:40px;
+    }
+    .phone{
+        display: block;
+    }
+    h1{
+        margin-top:40px;
+        font-size:40px;
+    }
+}

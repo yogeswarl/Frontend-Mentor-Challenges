@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+</head>
+<body>
+  <main>
+    <section class="left">
+      <a href="javascipt:void(0)"><img class="icon" src="./images/logo.svg" alt="logo"></a>
+      <img src="./images/hero-mobile.jpg" class="phone" alt="" style="width: 100%; height: 100%;">
+      <div>
+        <h1><span>We're</span> coming soon</h1>
+
+        <p>Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        
+        <form id="verify-form">
+          <input type="email" id="email" placeholder="Email Address">
+          <img class="error-sign" src="./images/icon-error.svg" alt="">
+          <button type="button" id="submit-email"><img id="click-img" src="./images/icon-arrow.svg" alt="arrow"> <span id="loader"></span></button>
+          <small class="show-invalidate">Please provide a valid email</small>
+        </form>
+      </div>
+
+    </section>
+
+    <section class="right">
+    </section>
+  </main>
+</body>
+<script>
+  document.getElementById('submit-email').onclick =function(){
+   let email = document.getElementById('email').value;
+    document.getElementById('click-img').classList.add('hide');
+    document.getElementById('loader').classList.add('show');
+    let regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if(regex.test(email)){
+      setTimeout(function(){
+        document.getElementById('click-img').classList.remove('hide');
+        document.getElementById('loader').classList.remove('show');
+        document.getElementById('email').classList.remove('error')
+        document.querySelector('.error-sign').classList.remove('show');
+        document.querySelector('.show-invalidate').classList.remove('show');
+        email = email;
+      },3000)
+    }
+    else{
+      setTimeout( function(){
+        document.getElementById('click-img').classList.remove('hide');
+      document.getElementById('loader').classList.remove('show');
+      document.getElementById('email').classList.add('error');
+      document.querySelector('.error-sign').classList.add('show');
+      document.querySelector('.show-invalidate').classList.add('show');
+      document.getElementById('email').value = '';
+    },3000)
+    }
+
+  }
+</script>
+</html>
