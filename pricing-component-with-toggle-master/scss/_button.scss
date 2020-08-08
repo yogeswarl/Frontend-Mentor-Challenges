@@ -3,6 +3,11 @@
   outline: none; 
   border: 1px solid;
   transition: 0.2s all;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-weight:700;
   &-preferred {
     background-color: $background-main;
     color: $secondary-grey;
@@ -16,9 +21,10 @@
     background-image:linear-gradient( 90deg,rgb(163, 168, 240), rgb(105, 111, 221));
     color: $background-main;
     &:hover {
+      background-image: none;
       background-color: transparent;
       border-color:$primary-grey;
-      color: $secondary-grey;  
+      color:rgb(105, 111, 221);  
     }
   }
 }

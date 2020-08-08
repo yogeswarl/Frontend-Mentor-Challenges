@@ -19,6 +19,11 @@
     display: flex;
   }
 }
+.fx-col {
+  @include viewports {
+    flex-direction: column;
+  }
+}
 .fx-cv {
   @include viewports {
     align-items: center;
@@ -48,5 +53,5 @@
   @include viewports {
     margin-left: auto;
     margin-right: auto;
-    }
+  }
 }
