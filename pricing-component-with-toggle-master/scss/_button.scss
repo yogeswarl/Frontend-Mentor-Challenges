@@ -1,0 +1,24 @@
+.btn{
+  width: 100%;
+  outline: none; 
+  border: 1px solid;
+  transition: 0.2s all;
+  &-preferred {
+    background-color: $background-main;
+    color: $secondary-grey;
+    &:hover{
+      background-color: transparent;
+      border-color: $background-main;
+      color: $background-main;
+    }
+  }
+  &-common{
+    background-image:linear-gradient( 90deg,rgb(163, 168, 240), rgb(105, 111, 221));
+    color: $background-main;
+    &:hover {
+      background-color: transparent;
+      border-color:$primary-grey;
+      color: $secondary-grey;  
+    }
+  }
+}
