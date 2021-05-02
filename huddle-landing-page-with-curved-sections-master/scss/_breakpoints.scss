@@ -1,0 +1,16 @@
+@mixin breakpoint($point) {
+
+  @if $point == phone {
+      @media (max-width: $phone) { @content; }
+  } @else if $point == desktop {
+    @media (max-width: $desktop) { @content; }
+  } 
+}
+
+
+@mixin viewports {
+  @content;
+  &-d  { @include breakpoint(desktop) { @content; } }
+  &-t  { @include breakpoint(tablet) { @content; } }
+  &-m  { @include breakpoint(phone)  { @content; } }
+}

@@ -1,0 +1,57 @@
+.container {
+  padding: 0 20px;
+  max-width: 960px;
+  width: 100%;
+}
+
+.t-c {
+  @include viewports {
+    text-align: center;
+  }
+}
+.t-l {
+  @include viewports {
+    text-align: left;
+  }
+}
+.fx {
+  @include viewports {
+    display: flex;
+  }
+}
+.fx-col {
+  @include viewports {
+    flex-direction: column;
+  }
+}
+.fx-cv {
+  @include viewports {
+    align-items: center;
+  }
+}
+.fx-ch {
+  @include viewports {
+    justify-content: center;
+  }
+}
+.mb-1{
+  @include viewports {
+  margin-bottom: 1rem;
+  }
+}
+.mb-2{
+  @include viewports {
+  margin-bottom: 2rem;
+  }
+}
+.mb-3{
+  @include viewports {
+  margin-bottom: 3rem;
+  }
+}
+.mh-a{
+  @include viewports {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

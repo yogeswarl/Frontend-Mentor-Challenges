@@ -1,0 +1,22 @@
+.btn{
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+  &-primary{
+    padding:14px 20px;
+    color: $color-white;
+    background-color:$pink;
+    &:hover{
+      background-color: $light-pink;
+    }
+  }
+  &-secondary{
+    background-color: $color-white;
+    color: $light-pink;
+    border: 1px solid $light-pink;
+    padding:10px 14px;
+    &:hover{
+      box-shadow: 0 2px 4px $light-pink;
+    }
+  }
+}
