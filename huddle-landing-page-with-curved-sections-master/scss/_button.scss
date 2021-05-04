@@ -1,9 +1,16 @@
 .btn{
   font-size: 14px;
+  line-height: 1.4;
   text-align: center;
+  display: inline-block;
   transition: all 0.2s ease-in-out;
+  font-weight: bold;
+  border-radius: 20px;
   &-primary{
-    padding:14px 20px;
+    font-size: 16px;
+    padding:22px 20px;
+    min-width: 300px;
+    border-radius: 34px;
     color: $color-white;
     background-color:$pink;
     &:hover{
@@ -15,6 +22,7 @@
     color: $light-pink;
     border: 1px solid $light-pink;
     padding:10px 14px;
+    min-width: 130px;
     &:hover{
       box-shadow: 0 2px 4px $light-pink;
     }

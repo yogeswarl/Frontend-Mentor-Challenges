@@ -1,7 +1,8 @@
 .container {
   padding: 0 20px;
-  max-width: 960px;
+  max-width: 1200px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .t-c {
@@ -53,5 +54,21 @@
   @include viewports {
     margin-left: auto;
     margin-right: auto;
+  }
+}
+.mr-a{
+  @include viewports {
+    margin-right: auto;
+  }
+}
+.ml-a{
+  @include viewports {
+    margin-left: auto;
+  }
+}
+.mh-reset{
+  @include viewports {
+    margin-left: 0;
+    margin-right: 0;
   }
 }
