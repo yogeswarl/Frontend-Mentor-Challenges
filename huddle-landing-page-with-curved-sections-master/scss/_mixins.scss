@@ -1,0 +1,25 @@
+@mixin sizes($prop, $pos) {
+
+  @each $name,
+  $val in $spacing {
+      &-#{$name} {
+          @each $x in $pos {
+              #{$prop}-#{$x}: #{$val};
+          }
+      }
+
+      @media screen and (max-width: 768px) {
+          &-#{$name} {
+              @each $x in $pos {
+                  #{$prop}-#{$x}: #{$val - $name};
+              }
+          }
+      }
+  }
+
+  &-reset {
+      @each $x in $pos {
+          #{$prop}-#{$x}: 0 !important;
+      }
+  }
+}

@@ -1,6 +1,6 @@
 .container {
   padding: 0 20px;
-  max-width: 1200px;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
 }
@@ -35,19 +35,27 @@
     justify-content: center;
   }
 }
-.mb-1{
+.fx-sa {
   @include viewports {
-  margin-bottom: 1rem;
+    justify-content: space-around;
   }
 }
-.mb-2{
-  @include viewports {
-  margin-bottom: 2rem;
+
+.mb{
+  @include sizes(margin, (bottom));
+  &-20{
+    margin-bottom: 80px;
+    @include breakpoint(phone){
+      margin-bottom: 40px;
+    }
   }
 }
-.mb-3{
-  @include viewports {
-  margin-bottom: 3rem;
+.p{
+  &b{
+    @include sizes(padding, (bottom));
+  }
+  &t{
+    @include sizes(padding, (top));
   }
 }
 .mh-a{

@@ -1,0 +1,15 @@
+.section{
+  font-size: 0;
+  &-content{
+    max-width: 512px;
+  }
+}
+.bg-variant{
+  background-color:$bg-color;
+}
+.split-2{
+  width: 50%;
+  @include breakpoint(phone){
+    width: 100%;
+  }
+}
