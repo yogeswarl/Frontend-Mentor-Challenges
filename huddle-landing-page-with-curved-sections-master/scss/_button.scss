@@ -17,8 +17,9 @@
       background-color: $light-pink;
     }
     &.sm-width{
-      min-width: 200px;
+      min-width: 150px;
       border-radius: 10px;
+      padding:9px 12px;
     }
   }
   &-secondary{

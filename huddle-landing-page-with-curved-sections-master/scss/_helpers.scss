@@ -25,6 +25,11 @@
     flex-direction: column;
   }
 }
+.fx-col-r {
+  @include viewports {
+    flex-direction: column-reverse;
+  }
+}
 .fx-cv {
   @include viewports {
     align-items: center;
@@ -78,5 +83,20 @@
   @include viewports {
     margin-left: 0;
     margin-right: 0;
+  }
+}
+@media (max-width:768px){
+  .phone-hide{
+    display: none;  
+  }
+}
+@media (min-width:768px){
+  .phone-only{
+    display: none;  
+  }
+}
+@media (max-width:1024px){
+  .desktop-only{
+    display: none;  
   }
 }

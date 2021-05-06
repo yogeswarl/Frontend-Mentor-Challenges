@@ -1,0 +1,36 @@
+.footer{
+  background-color:$dark-cyan;
+  #newsletterValidation{
+    @include breakpoint(phone){
+    max-width:300px;
+    margin-bottom: 60px;
+    }
+  }
+  input{
+    border-radius: 6px;
+    background-color: $color-white;
+    margin-right: 32px;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    width:360px;
+    @include breakpoint(phone){
+      margin-bottom: 20px;
+      margin-right: 0;
+      width: 300px;
+    }
+  }
+  p > img{
+    margin-right: 12px;
+  }
+  .newsletter{
+    max-width: 380px;
+    @include breakpoint(phone){
+      max-width: 300px;
+    }
+  }
+  .company-description{
+    max-width: 300px;
+  }
+
+}
