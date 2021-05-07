@@ -129,13 +129,31 @@
             </div>
             <div id="newsletterValidation" class="fx fx-col-m">
               <input type="email" id="email" name="email"> 
-              <a href="javascript:void(0);" class="btn btn-primary sm-width ml-a-m">
+              <a href="javascript:void(0);" class="btn btn-primary sm-width ml-a-m" id="submit">
                 Subscribe
               </a> 
             </div>
+            <p class="error-text">
+                check your mail please
+            </p>
           </div>
         </article>
     </div>
   </footer>
+  <script type="text/javascript" >
+    const emailRegex = /^[a-z,A-Z,0-9]+@[a-zA-Z0-9.-]*$/;
+      document.getElementById('submit').addEventListener("click",function(){
+        const inputNode = this.previousElementSibling
+        const errorText = document.querySelector('.error-text');
+        if(emailRegex.test(inputNode.value)){
+          inputNode.classList.add('error');
+          errorText.classList.add('active');
+        }
+        else{
+          inputNode.classList.remove('error');
+          errorText.classList.remove('active');
+        }
+      })
+  </script>
 </body>
 </html>
