@@ -34,7 +34,7 @@ function checkComplete(){
       case "email":
         /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/.test(value)
         ? fieldName.closest(".form-field").classList.remove("error")
-        : handleChange(fieldName,'Enter Proper Name')
+        : handleChange(fieldName,'Enter Proper email address')
          break;
       case "password":
         /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})/.test(value)

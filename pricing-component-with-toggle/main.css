@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  background-color: rgb(246, 246, 254);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  padding: 0 20px;
+  max-width: 960px;
+  width: 100%;
+}
+
+.t-c {
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .t-c-d {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .t-c-m {
+    text-align: center;
+  }
+}
+
+.t-l {
+  text-align: left;
+}
+@media (max-width: 1200px) {
+  .t-l-d {
+    text-align: left;
+  }
+}
+@media (max-width: 600px) {
+  .t-l-m {
+    text-align: left;
+  }
+}
+
+.fx {
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .fx-d {
+    display: flex;
+  }
+}
+@media (max-width: 600px) {
+  .fx-m {
+    display: flex;
+  }
+}
+
+.fx-col {
+  flex-direction: column;
+}
+@media (max-width: 1200px) {
+  .fx-col-d {
+    flex-direction: column;
+  }
+}
+@media (max-width: 600px) {
+  .fx-col-m {
+    flex-direction: column;
+  }
+}
+
+.fx-cv {
+  align-items: center;
+}
+@media (max-width: 1200px) {
+  .fx-cv-d {
+    align-items: center;
+  }
+}
+@media (max-width: 600px) {
+  .fx-cv-m {
+    align-items: center;
+  }
+}
+
+.fx-ch {
+  justify-content: center;
+}
+@media (max-width: 1200px) {
+  .fx-ch-d {
+    justify-content: center;
+  }
+}
+@media (max-width: 600px) {
+  .fx-ch-m {
+    justify-content: center;
+  }
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+@media (max-width: 1200px) {
+  .mb-1-d {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .mb-1-m {
+    margin-bottom: 1rem;
+  }
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+@media (max-width: 1200px) {
+  .mb-2-d {
+    margin-bottom: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .mb-2-m {
+    margin-bottom: 2rem;
+  }
+}
+
+.mb-3 {
+  margin-bottom: 3rem;
+}
+@media (max-width: 1200px) {
+  .mb-3-d {
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 600px) {
+  .mb-3-m {
+    margin-bottom: 3rem;
+  }
+}
+
+.mh-a {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 1200px) {
+  .mh-a-d {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (max-width: 600px) {
+  .mh-a-m {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+h1 {
+  font-size: 2.4rem;
+  letter-spacing: 1px;
+  color: rgb(73, 76, 95);
+  margin-top: 3rem;
+}
+
+.text-light {
+  color: rgb(109, 112, 141);
+}
+
+.title-lg {
+  font-size: 3rem;
+  letter-spacing: 1px;
+}
+
+.toggle-btn {
+  height: 26px;
+  width: 50px;
+  border-radius: 12px;
+  background-image: linear-gradient(90deg, rgb(163, 168, 240), rgb(105, 111, 221));
+  margin: 0 16px;
+  position: relative;
+  cursor: pointer;
+  display: block;
+}
+.toggle-btn:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  left: 2px;
+  top: 2px;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.2s ease;
+}
+
+#toggle {
+  display: none;
+}
+
+#toggle:checked + .toggle-btn::after {
+  left: 26px;
+}
+
+.btn {
+  width: 100%;
+  outline: none;
+  border: 1px solid;
+  transition: 0.2s all;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 4px;
+  font-weight: 700;
+}
+.btn-preferred {
+  background-color: rgb(246, 246, 254);
+  color: rgb(109, 112, 141);
+}
+.btn-preferred:hover {
+  background-color: transparent;
+  border-color: rgb(246, 246, 254);
+  color: rgb(246, 246, 254);
+}
+.btn-common {
+  background-image: linear-gradient(90deg, rgb(163, 168, 240), rgb(105, 111, 221));
+  color: rgb(246, 246, 254);
+}
+.btn-common:hover {
+  background-image: none;
+  background-color: transparent;
+  border-color: rgb(73, 76, 95);
+  color: rgb(105, 111, 221);
+}
+
+.card {
+  width: 33.33%;
+  box-shadow: 0px 0px 3px rgb(109, 112, 141);
+  padding: 20px;
+  color: rgb(109, 112, 141);
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+}
+.card li.title-lg {
+  color: rgb(73, 76, 95);
+}
+.card .pb-1 {
+  padding-bottom: 1rem;
+}
+.card .pv-1 {
+  padding: 1rem 0;
+}
+.card.preferred {
+  background-image: linear-gradient(135deg, rgb(163, 168, 240), rgb(105, 111, 221));
+  padding: 30px 20px;
+  color: rgb(246, 246, 254);
+}
+.card.preferred .title-lg {
+  color: rgb(246, 246, 254);
+}
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+  }
+}
+.card.annually .annual {
+  display: block;
+}
+.card.annually .monthly {
+  display: none;
+}
+.card .annual {
+  display: none;
+}
+.card .monthly {
+  display: block;
+}
+.card .border-top, .card .border-vertical {
+  border-top: 1px solid rgba(109, 112, 141, 0.56);
+}
+.card .border-bottom, .card .border-vertical {
+  border-bottom: 1px solid rgba(109, 112, 141, 0.56);
+}
+.card .border-light-top, .card .border-light-vertical {
+  border-top: 1px solid rgb(179, 181, 198);
+}
+.card .border-light-bottom, .card .border-light-vertical {
+  border-bottom: 1px solid rgb(179, 181, 198);
+}
+@media (max-width: 768px) {
+  .card {
+    display: block;
+    width: calc(50% - 10px);
+    margin: 0 auto 20px;
+    max-width: 300px;
+  }
+  .card.preferred {
+    padding: 20px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

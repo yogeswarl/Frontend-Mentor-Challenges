@@ -1,0 +1,87 @@
+/* base */
+:root {
+	--Cyan: rgb(42, 178, 175);
+	--Bright-Yellow: rgb(192, 223, 52);
+	--Light-Gray: rgb(229, 239, 245);
+	--Grayish-Blue: rgb(152, 166, 189);
+	--White: rgb(255, 255, 255);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	background-color: var(--Light-Gray);
+	box-sizing: border-box;
+	font-family: "Karla", sans-serif;
+	font-size: 16px;
+	color: var(--Grayish-Blue);
+	display: flex;
+}
+
+/* helpers */
+.fx {
+  display: flex;
+  flex-wrap: wrap;
+}
+.fx-jc-sb {
+  justify-content: space-between;
+  align-items: center;
+}
+.fw-400 {
+  font-weight: 400;
+}
+.fw-700 {
+  font-weight: 700;
+}
+
+.fc-white {
+  color: var(--White);  
+}
+.mb-1{
+  margin-bottom: 1rem;
+}
+.mb-2{
+  margin-bottom: 1rem;
+}
+.mb-4{
+  margin-bottom: 4rem;
+}
+/* layout */
+.container {
+  margin: auto;
+  max-width: 820px;
+  width: 100%;
+}
+.container-lg {
+  max-width: 1024px;
+}
+.title {
+  font-size: 45px;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.link { 
+  color: var(--Cyan);
+  font-weight: 700;
+}
+.card {
+  padding: 12px 8px;
+  border-radius: 4px;
+  max-width: 400px;
+  background-color: var(--White);
+  box-shadow: 0px 0px 2px 0 var(--Light-Gray);
+}
+.fx {
+  display: flex;
+}

@@ -4,9 +4,12 @@
   "description": "![Header/intro section for the Huddle landing page with curved sections](./design/desktop-preview.jpg)",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev":"parcel index.html",
-    "build":"parcel build index.html"
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.0.0-beta.2"
+  }
 }
